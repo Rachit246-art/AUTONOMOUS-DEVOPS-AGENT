@@ -1,3 +1,3 @@
 """
-Package initialization for backend.fastapi_app.app.
+App package.
 """
