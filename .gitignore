@@ -38,6 +38,8 @@ venv.bak/
 .env
 .env.local
 .env.*.local
+!.env.example
+!frontend/.env.example
 
 # IDEs & Editors
 .idea/
@@ -71,6 +73,14 @@ data/documents/*
 !data/documents/.gitkeep
 data/vector_db/*
 !data/vector_db/.gitkeep
+data/vector_export.json
+data/*.json
+chroma_db/
+
+# Frontend dependencies and builds
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
 
 # Logs
 *.log

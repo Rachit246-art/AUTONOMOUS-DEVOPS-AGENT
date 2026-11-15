@@ -1,3 +1,4 @@
+
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
@@ -18,9 +19,9 @@ def create_incident(
     db: Session = Depends(get_db)
 ):
 
-    saved_error = save_error(
+    result = save_error(
         db=db,
         error_message=error.error_message
     )
 
-    return saved_error
+    return result
